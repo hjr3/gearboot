@@ -13,9 +13,11 @@ worker function name.
 
 ### Examples ###
 Starting a gearman worker in ./reverse.php
+
     gearboot -f reverse
 
 The output will look something like:
+
     hradtke@dev01 ~/projects/gearboot !! gearboot -f reverse
     Gearman worker running... press Ctrl-c to stop
     Listening for function: reverse

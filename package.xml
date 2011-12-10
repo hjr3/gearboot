@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
+ <name>gearboot</name>
+ <channel>hradtke.github.com/pear</channel>
+ <summary>Gearman worker bootstrap</summary>
+ <description>A bootstrap script for Gearman workers</description>
+ <lead>
+  <name>Herman J. Radtke III</name>
+  <user>hradtke</user>
+  <email>hradtke@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-12-09</date>
+ <time>07:21:52</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+ <notes>
+Initial release of gearboot.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="9f3217e7575a6792809158f20f071b5a" name="bin/gearboot.php" role="php" />
+   <file baseinstalldir="/" md5sum="e8a342dde7d763ec403db1c5d51e1fb8" name="bin/gearboot.sh" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config" />
+    <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="33f0ec224d1dbd10e9f28ac1ae5607ff" name="LICENSE" role="doc" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="README.md" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.3</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="gearboot" name="bin/gearboot.sh" />
+   <install as="gearboot.php" name="bin/gearboot.php" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-12-09</date>
+   <license uri="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+   <notes>
+   </notes>
+  </release>
+ </changelog>
+</package>
